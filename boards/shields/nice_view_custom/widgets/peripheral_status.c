@@ -49,7 +49,7 @@ const lv_img_dsc_t *anim_imgs[] = {
     &moo10,
     &moo11,
     &moo12,
-}
+};
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
