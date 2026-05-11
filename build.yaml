@@ -1,0 +1,13 @@
+# This file generates the GitHub Actions matrix
+# For more info, see https://docs.zmk.dev/docs/customization/clean-room
+
+include:
+  - board: nice_nano_v2
+    snippet: studio-rpc-usb-uart
+    shield: lily58_left nice_view_adapter nice_view_custom
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+  - board: nice_nano_v2
+    shield: lily58_right nice_view_adapter nice_view_custom
+    snippet: studio-rpc-usb-uart
+  - board: nice_nano
+    shield: settings_reset
